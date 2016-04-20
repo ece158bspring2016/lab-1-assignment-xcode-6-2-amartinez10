@@ -14,6 +14,10 @@
 		C922AB191CC83354002F2BF1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C922AB181CC83354002F2BF1 /* Images.xcassets */; };
 		C922AB1C1CC83354002F2BF1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C922AB1A1CC83354002F2BF1 /* LaunchScreen.xib */; };
 		C922AB281CC83354002F2BF1 /* lab1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C922AB271CC83354002F2BF1 /* lab1Tests.m */; };
+		C9C17BCA1CC8431100851568 /* PlayersViewControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C17BC81CC8431100851568 /* PlayersViewControllerTableViewController.swift */; };
+		C9C17BCB1CC8431100851568 /* PlayersViewControllerTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9C17BC91CC8431100851568 /* PlayersViewControllerTableViewController.xib */; };
+		C9C17BCD1CC8440E00851568 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C17BCC1CC8440E00851568 /* Player.swift */; };
+		C9C17BCF1CC8450E00851568 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C17BCE1CC8450E00851568 /* SampleData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,11 @@
 		C922AB211CC83354002F2BF1 /* lab1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lab1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C922AB261CC83354002F2BF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C922AB271CC83354002F2BF1 /* lab1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lab1Tests.m; sourceTree = "<group>"; };
+		C9C17BC71CC8431100851568 /* lab1-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "lab1-Bridging-Header.h"; sourceTree = "<group>"; };
+		C9C17BC81CC8431100851568 /* PlayersViewControllerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayersViewControllerTableViewController.swift; sourceTree = "<group>"; };
+		C9C17BC91CC8431100851568 /* PlayersViewControllerTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayersViewControllerTableViewController.xib; sourceTree = "<group>"; };
+		C9C17BCC1CC8440E00851568 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		C9C17BCE1CC8450E00851568 /* SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +75,7 @@
 				C922AB0A1CC83354002F2BF1 /* lab1 */,
 				C922AB241CC83354002F2BF1 /* lab1Tests */,
 				C922AB091CC83354002F2BF1 /* Products */,
+				C9C17BC71CC8431100851568 /* lab1-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,10 +92,14 @@
 			isa = PBXGroup;
 			children = (
 				C922AB0F1CC83354002F2BF1 /* AppDelegate.h */,
+				C9C17BC81CC8431100851568 /* PlayersViewControllerTableViewController.swift */,
+				C9C17BC91CC8431100851568 /* PlayersViewControllerTableViewController.xib */,
 				C922AB101CC83354002F2BF1 /* AppDelegate.m */,
 				C922AB121CC83354002F2BF1 /* ViewController.h */,
 				C922AB131CC83354002F2BF1 /* ViewController.m */,
 				C922AB151CC83354002F2BF1 /* Main.storyboard */,
+				C9C17BCC1CC8440E00851568 /* Player.swift */,
+				C9C17BCE1CC8450E00851568 /* SampleData.swift */,
 				C922AB181CC83354002F2BF1 /* Images.xcassets */,
 				C922AB1A1CC83354002F2BF1 /* LaunchScreen.xib */,
 				C922AB0B1CC83354002F2BF1 /* Supporting Files */,
@@ -202,6 +216,7 @@
 				C922AB171CC83354002F2BF1 /* Main.storyboard in Resources */,
 				C922AB1C1CC83354002F2BF1 /* LaunchScreen.xib in Resources */,
 				C922AB191CC83354002F2BF1 /* Images.xcassets in Resources */,
+				C9C17BCB1CC8431100851568 /* PlayersViewControllerTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,8 +235,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C922AB141CC83354002F2BF1 /* ViewController.m in Sources */,
+				C9C17BCF1CC8450E00851568 /* SampleData.swift in Sources */,
 				C922AB111CC83354002F2BF1 /* AppDelegate.m in Sources */,
 				C922AB0E1CC83354002F2BF1 /* main.m in Sources */,
+				C9C17BCD1CC8440E00851568 /* Player.swift in Sources */,
+				C9C17BCA1CC8431100851568 /* PlayersViewControllerTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,9 +363,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = lab1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "lab1-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -355,9 +376,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = lab1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "lab1-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -414,6 +437,7 @@
 				C922AB2D1CC83354002F2BF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C922AB2E1CC83354002F2BF1 /* Build configuration list for PBXNativeTarget "lab1Tests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +446,7 @@
 				C922AB301CC83354002F2BF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
